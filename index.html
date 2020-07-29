@@ -15,6 +15,17 @@
         vertical-align: top;
     }
 
+    .header img {
+  float: left;
+  width: 60px;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
     .sidenav {
       margin-top:120px;
       margin-left:10px;
@@ -126,7 +137,10 @@
 </head>
 <body>
 
-    <h1>Data Catalog for Snowflake & Starschema COVID-19 Data Tables</h1>
+    <div class="header">
+      <!-- <img src="database.png"> -->
+      <h1>Data Catalog for COVID-19 Dataset from Snowflake & Starschema</h1>
+    </div>
 
     <div class="sidenav">
         <h2>Tables</h2>
@@ -227,6 +241,6 @@ document.getElementById("Overview").style.display = "block";
 
 
 </script>
-   
+<br>
 </body>
 </html> 
