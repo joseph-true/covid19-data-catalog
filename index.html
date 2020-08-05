@@ -5,9 +5,10 @@
     <title>COVID-19 Data Catalog</title>
 
   <style>
+
     body {
       font-family: "Lato", sans-serif;
-      margin-left: 10px;
+      margin-left: 0px;
       margin-right: 20px;
     }
 
@@ -15,22 +16,36 @@
         vertical-align: top;
     }
 
-    .header img {
-  float: left;
-  width: 60px;
-}
 
-.header h1 {
-  position: relative;
-  top: 18px;
-  left: 10px;
-}
+    .header {
+      overflow: hidden;
+      background-color:rgb(15, 45, 73);
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      height: 80px;
+      width: 100%; /* Full width */
+    }
+
+    .header img {
+      float: left;
+      width: 40px;
+      margin-top: 20px;
+      margin-left: 8px;
+    }
+
+    .header h1 {
+      position: relative;
+      top: 2px;
+      left: 10px;
+      color: white;
+    }
 
     .sidenav {
-      margin-top:120px;
-      margin-left:10px;
+      margin-top:80px;
+      /* margin-left:10px; */
       height: 100%;
-      width: 300px;
+      width: 20%;
+      min-width: 300px;
       font-size: 18px;
       position: fixed;
       z-index: 1;
@@ -38,7 +53,7 @@
       left: 0;
       background-color: rgb(143, 190, 212);
       overflow-x: hidden;
-      padding-top: 4px;
+      padding-top: 0px;
       padding-left:10px;
     }
 
@@ -55,11 +70,14 @@
     }
 
     .main {
-      margin-top:60px;
-      margin-left: 300px; /* Same as the width of the sidenav */
+      margin-top:80px;
+      margin-left: 20%; /* Same as the width of the sidenav */
       font-size: 18px; /* Increased text to enable scrolling */
-      padding-top: 4px;
+      padding-top: 0px;
       padding-left:20px;
+      position: fixed;
+      width: 70%;
+      height:70%;
     }
 
     @media screen and (max-height: 450px) {
@@ -110,6 +128,7 @@
     padding: 6px 20px;
     border: 1px solid #ccc;
     border-top: none;
+    height:100%;
     }
 
     /* Menu list of tables */
@@ -123,7 +142,6 @@
     .tablemenu:hover {
     background-color: rgb(165, 172, 192);
     }
-
 
     .hr {
     background-color: #8a8a8b;
@@ -180,19 +198,19 @@
     <!-- Tab content -->
 
       <div id="Overview" class="tabcontent">
-        <iframe src="intro.html" name="ifrm_overview" height="800px" width="100%" title="Iframe Example"></iframe>
+        <iframe src="intro.html" name="ifrm_overview" height="100%" width="100%" title="Iframe Example"></iframe>
       </div>
 
       <div id="Metadata" class="tabcontent">
-          <iframe src="" name="ifrm_metadata" height="800px" width="100%" title="Iframe Example"></iframe>
+          <iframe src="" name="ifrm_metadata" height="100%" width="100%" title="Iframe Example"></iframe>
       </div>
       
       <div id="Preview" class="tabcontent">
-          <iframe src="" name="ifrm_data_preview" height="800px" width="100%" title="Iframe Example"></iframe>
+          <iframe src="" name="ifrm_data_preview" height="100%" width="100%" title="Iframe Example"></iframe>
       </div>
       
       <div id="Profile" class="tabcontent">
-          <iframe src="" name="ifrm_data_profile" height="800px" width="100%" title="Iframe Example"></iframe>
+          <iframe src="" name="ifrm_data_profile" height="100%" width="100%" title="Iframe Example"></iframe>
       </div>
   </div>
 </div>
