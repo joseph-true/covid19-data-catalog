@@ -78,84 +78,64 @@
   </thead>
   <tbody>
     <tr>
-      <th>3</th>
-      <td>CT_US_COVID_TESTS</td>
-      <td>Date of data point</td>
-      <td>DATE</td>
-      <td>DATE</td>
-      <td>False</td>
+      <th>211</th>
+      <td>HDX_ACAPS</td>
+      <td>Source of information on the public health measure</td>
+      <td>SOURCE</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
       <td>None</td>
-      <td>CovidTracking API</td>
+      <td>ACAPS via HDX</td>
     </tr>
     <tr>
-      <th>292</th>
+      <th>256</th>
+      <td>SCS_BE_DETAILED_TESTS</td>
+      <td>Timestamp of last update</td>
+      <td>LAST_UPDATED_DATE</td>
+      <td>TIMESTAMP_NTZ(9)</td>
+      <td>False</td>
+      <td>None</td>
+      <td>Sciensano</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>CT_US_COVID_TESTS</td>
+      <td>Positive cases since previous date of report</td>
+      <td>POSITIVE_SINCE_PREVIOUS_DAY</td>
+      <td>NUMBER(38,0)</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>278</th>
       <td>IHME_COVID_19</td>
-      <td>New ICU cases on date, mean</td>
-      <td>NEWICU_MEAN</td>
+      <td>COVID-19 beds needed on date, lower uncertainty bound</td>
+      <td>ALLBED_LOWER</td>
       <td>FLOAT</td>
       <td>True</td>
       <td>None</td>
       <td>IMHE</td>
     </tr>
     <tr>
-      <th>102</th>
-      <td>PCM_DPS_COVID19_DETAILS</td>
-      <td>Italy case statistics, detailed</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>167</th>
-      <td>NYT_US_COVID19</td>
-      <td>Date of data point</td>
-      <td>DATE</td>
-      <td>DATE</td>
+      <th>163</th>
+      <td>KFF_US_ICU_BEDS</td>
+      <td>Number of hospitals in geography of record</td>
+      <td>HOSPITALS</td>
+      <td>NUMBER(38,0)</td>
       <td>True</td>
       <td>None</td>
-      <td>The New York Times</td>
+      <td>Henry J. Kaiser Family Foundation</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>CT_US_COVID_TESTS</td>
-      <td>Positive cases on date of report</td>
-      <td>POSITIVE</td>
-      <td>NUMBER(38,0)</td>
+      <th>252</th>
+      <td>SCS_BE_DETAILED_PROVINCE_CASE_COUNTS</td>
+      <td>Timestamp of last update</td>
+      <td>LAST_UPDATED_DATE</td>
+      <td>TIMESTAMP_NTZ(9)</td>
       <td>False</td>
       <td>None</td>
-      <td>CovidTracking API</td>
-    </tr>
-    <tr>
-      <th>286</th>
-      <td>IHME_COVID_19</td>
-      <td>Deaths on date, mean</td>
-      <td>DEATHS_MEAN</td>
-      <td>FLOAT</td>
-      <td>True</td>
-      <td>None</td>
-      <td>IMHE</td>
-    </tr>
-    <tr>
-      <th>124</th>
-      <td>PCM_DPS_COVID19_DETAILS</td>
-      <td>Patients tested since last date of record</td>
-      <td>TESTED_SINCE_PREV_DAY</td>
-      <td>NUMBER(38,0)</td>
-      <td>True</td>
-      <td>None</td>
-      <td>Presidenza del Consiglio dei Ministri, Dipartimento della Protezione Civile</td>
-    </tr>
-    <tr>
-      <th>150</th>
-      <td>DEMOGRAPHICS</td>
-      <td>Longitude of the county</td>
-      <td>LONGITUDE</td>
-      <td>FLOAT</td>
-      <td>True</td>
-      <td>None</td>
-      <td>US Census</td>
+      <td>Sciensano</td>
     </tr>
     <tr>
       <th>16</th>
@@ -168,14 +148,34 @@
       <td>None</td>
     </tr>
     <tr>
-      <th>276</th>
-      <td>IHME_COVID_19</td>
-      <td>Date of forecast</td>
-      <td>DATE</td>
-      <td>DATE</td>
+      <th>311</th>
+      <td>METADATA</td>
+      <td>Column name (empty for table-level descriptions)</td>
+      <td>COLUMN</td>
+      <td>VARCHAR(16777216)</td>
       <td>True</td>
       <td>None</td>
-      <td>IHME</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>KFF_HCP_CAPACITY</td>
+      <td>Total hospital beds, 2018</td>
+      <td>TOTAL_HOSPITAL_BEDS</td>
+      <td>NUMBER(38,0)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>2018 AHA Annual Survey, special data request by the Henry J. Kaiser Family Foundation</td>
+    </tr>
+    <tr>
+      <th>265</th>
+      <td>RKI_GER_DETAILED_DASHBOARD</td>
+      <td>Number of cases</td>
+      <td>CASES</td>
+      <td>NUMBER(38,0)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>Robert Koch Institut</td>
     </tr>
   </tbody>
 </table><h3>Last 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
