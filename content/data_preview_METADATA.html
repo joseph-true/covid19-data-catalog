@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="background-color:white;font-family:sans-serif;padding-left:20px;padding-right:20px"><h2>METADATA</h2><h3>First 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+<!DOCTYPE html><html><head><link rel="stylesheet" href="content/css/datacat.css"><link rel="stylesheet" href="content/css/tables.css"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="background-color:white;font-family:sans-serif;padding-left:20px;padding-right:20px"><h2>METADATA</h2><h3>First 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -78,104 +78,104 @@
   </thead>
   <tbody>
     <tr>
-      <th>211</th>
-      <td>HDX_ACAPS</td>
-      <td>Source of information on the public health measure</td>
-      <td>SOURCE</td>
-      <td>VARCHAR(16777216)</td>
+      <th>224</th>
+      <td>SCS_BE_DETAILED_HOSPITALISATIONS</td>
+      <td>Total number of hospitalised patients on respiratory support</td>
+      <td>TOTAL_IN_RESP</td>
+      <td>NUMBER(38,0)</td>
       <td>True</td>
-      <td>None</td>
-      <td>ACAPS via HDX</td>
-    </tr>
-    <tr>
-      <th>256</th>
-      <td>SCS_BE_DETAILED_TESTS</td>
-      <td>Timestamp of last update</td>
-      <td>LAST_UPDATED_DATE</td>
-      <td>TIMESTAMP_NTZ(9)</td>
-      <td>False</td>
       <td>None</td>
       <td>Sciensano</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>86</th>
+      <td>KFF_US_STATE_MITIGATIONS</td>
+      <td>State is easing the social distancing measures</td>
+      <td>STATE_IS_EASING_SOCIAL_DISTANCING_MEASURES</td>
+      <td>VARCHAR(8192)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>Henry J. Kaiser Family Foundation</td>
+    </tr>
+    <tr>
+      <th>30</th>
       <td>CT_US_COVID_TESTS</td>
-      <td>Positive cases since previous date of report</td>
-      <td>POSITIVE_SINCE_PREVIOUS_DAY</td>
+      <td>Patients currently receiving mechanical ventilation since previous date of report</td>
+      <td>ONVENTILATORCURRENTLYINCREASE</td>
       <td>NUMBER(38,0)</td>
-      <td>False</td>
+      <td>True</td>
       <td>None</td>
       <td>None</td>
     </tr>
     <tr>
-      <th>278</th>
+      <th>132</th>
+      <td>WHO_SITUATION_REPORTS</td>
+      <td>Total case count for geography</td>
+      <td>TOTAL_CASES</td>
+      <td>NUMBER(38,0)</td>
+      <td>False</td>
+      <td>None</td>
+      <td>WHO Situation Reports</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>HDX_ACAPS</td>
+      <td>Description of public health measure</td>
+      <td>MEASURE</td>
+      <td>VARCHAR(16777216)</td>
+      <td>False</td>
+      <td>None</td>
+      <td>ACAPS via HDX</td>
+    </tr>
+    <tr>
+      <th>185</th>
+      <td>HUM_RESTRICTIONS_AIRLINE</td>
+      <td>Date restrictions were published</td>
+      <td>PUBLISHED</td>
+      <td>DATE</td>
+      <td>False</td>
+      <td>None</td>
+      <td>World Food Programme via HDX</td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td>NYT_US_COVID19</td>
+      <td>County name</td>
+      <td>COUNTY</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>In some cases, data is reported from multiple counties or non-county geographies as a single entity. These are detailed in the list of geographic exceptions: https://github.com/nytimes/covid-19-data#geographic-exceptions</td>
+      <td>The New York Times</td>
+    </tr>
+    <tr>
+      <th>303</th>
       <td>IHME_COVID_19</td>
-      <td>COVID-19 beds needed on date, lower uncertainty bound</td>
-      <td>ALLBED_LOWER</td>
+      <td>ICU bed overflow on date, upper uncertainty bound</td>
+      <td>ICUOVER_UPPER</td>
       <td>FLOAT</td>
       <td>True</td>
       <td>None</td>
       <td>IMHE</td>
     </tr>
     <tr>
-      <th>163</th>
-      <td>KFF_US_ICU_BEDS</td>
-      <td>Number of hospitals in geography of record</td>
-      <td>HOSPITALS</td>
-      <td>NUMBER(38,0)</td>
-      <td>True</td>
-      <td>None</td>
-      <td>Henry J. Kaiser Family Foundation</td>
-    </tr>
-    <tr>
-      <th>252</th>
-      <td>SCS_BE_DETAILED_PROVINCE_CASE_COUNTS</td>
-      <td>Timestamp of last update</td>
-      <td>LAST_UPDATED_DATE</td>
-      <td>TIMESTAMP_NTZ(9)</td>
-      <td>False</td>
-      <td>None</td>
-      <td>Sciensano</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>CT_US_COVID_TESTS</td>
-      <td>ISO-3166-1 code for geography of report</td>
-      <td>ISO3166_1</td>
+      <th>205</th>
+      <td>HDX_ACAPS</td>
+      <td>Category of public health measure</td>
+      <td>CATEGORY</td>
       <td>VARCHAR(16777216)</td>
       <td>True</td>
       <td>None</td>
-      <td>None</td>
+      <td>ACAPS via HDX</td>
     </tr>
     <tr>
-      <th>311</th>
-      <td>METADATA</td>
-      <td>Column name (empty for table-level descriptions)</td>
-      <td>COLUMN</td>
+      <th>91</th>
+      <td>PCM_DPS_COVID19</td>
+      <td>ISO-3166-2 entity name</td>
+      <td>PROVINCE_STATE</td>
       <td>VARCHAR(16777216)</td>
       <td>True</td>
       <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>KFF_HCP_CAPACITY</td>
-      <td>Total hospital beds, 2018</td>
-      <td>TOTAL_HOSPITAL_BEDS</td>
-      <td>NUMBER(38,0)</td>
-      <td>True</td>
-      <td>None</td>
-      <td>2018 AHA Annual Survey, special data request by the Henry J. Kaiser Family Foundation</td>
-    </tr>
-    <tr>
-      <th>265</th>
-      <td>RKI_GER_DETAILED_DASHBOARD</td>
-      <td>Number of cases</td>
-      <td>CASES</td>
-      <td>NUMBER(38,0)</td>
-      <td>True</td>
-      <td>None</td>
-      <td>Robert Koch Institut</td>
+      <td>Presidenza del Consiglio dei Ministri, Dipartimento della Protezione Civile</td>
     </tr>
   </tbody>
 </table><h3>Last 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
