@@ -2,11 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.bar {
-    fill: #5f89ad;
-}
-
 .axis {
     font-size: 12px;
 }
@@ -21,11 +16,16 @@ body {
     font-size: 12px;
 }
 
+/* Chart */
+.bar {
+  fill: #829FBF;
+}
+
 /* Dashboard Cards*/
 .single_data_val {
     font-size:30px;
     font-weight: bold;
-    color:#5f89ad;
+    color:#315277;
     margin-bottom: 12px;
 }
 

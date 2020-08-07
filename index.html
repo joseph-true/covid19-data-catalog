@@ -8,7 +8,7 @@
   <style>
 
     body {
-      font-family: "Lato", sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       margin-left: 0px;
       margin-right: 20px;
     }
@@ -19,7 +19,7 @@
 
     .header {
       overflow: hidden;
-      background-color:rgb(15, 45, 73);
+      background-color:#091D34;
       position: fixed; /* Set the navbar to fixed position */
       top: 0; /* Position the navbar at the top of the page */
       height: 80px;
@@ -36,8 +36,8 @@
     .header h1 {
       position: relative;
       top: 2px;
-      left: 10px;
-      color: white;
+      left: 12px;
+      color: #f1f1f1;
     }
 
     .sidenav {
@@ -51,20 +51,22 @@
       z-index: 1;
       top: 0;
       left: 0;
-      background-color: rgb(143, 190, 212);
+      background-color: #d9d9d9;
       overflow-x: hidden;
       overflow-y: scroll;
       padding-top: 0px;
       padding-left:14px;
     }
 
-    .sidenav a {
+    /*
+    .sidenav p {
       padding: 0px 8px 6px 16px;
       text-decoration: none;
       font-size: 20px;
       color: #818181;
       display: block;
     }
+    */
 
     .sidenav p:hover {
       color: #f1f1f1;
@@ -250,6 +252,18 @@
     // Display content in iframes for the selected table 
     function displayContent(table_name) {
 
+      // Build URLs for the table content
+      var url_overview = "content/overview_" + table_name + ".html";
+      var url_metadata = "content/metadata_" + table_name + ".html";
+      var url_dprofile = "content/data_profile_" + table_name + ".html";
+      var url_dpreview = "content/data_preview_" + table_name + ".html";
+
+      window.frames['ifrm_overview'].location = url_overview;
+      // window.frames['ifrm_overview'].src = url_overview;
+      window.frames['ifrm_metadata'].location = url_metadata;
+      window.frames['ifrm_data_preview'].location = url_dpreview;
+      window.frames['ifrm_data_profile'].location = url_dprofile;
+
       // Get all table TOC items and remove bold and highlighting
       tocitems = document.getElementsByClassName("tablemenu");
       for (i = 0; i < tocitems.length; i++) {
@@ -260,18 +274,6 @@
       // Highlight the selected item
       document.getElementById(table_name).style.fontWeight = "bold";
       document.getElementById(table_name).style.backgroundColor = "silver";
-      
-      // Build URLs for the table content
-      var url_overview = "content/overview_" + table_name + ".html";
-      var url_metadata = "content/metadata_" + table_name + ".html";
-      var url_dprofile = "content/data_profile_" + table_name + ".html";
-      var url_dpreview = "content/data_preview_" + table_name + ".html";
-
-
-      window.frames['ifrm_overview'].location = url_overview;
-      window.frames['ifrm_metadata'].location = url_metadata;
-      window.frames['ifrm_data_preview'].location = url_dpreview;
-      window.frames['ifrm_data_profile'].location = url_dprofile;
 
     }
 </script>
