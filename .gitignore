@@ -1,5 +1,6 @@
 # Exclude Mac image info files
 **/.DS_Store
+jt*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
