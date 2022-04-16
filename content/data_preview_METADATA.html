@@ -1,4 +1,4 @@
-<html><body style="font-family:sans-serif;padding-left:20px;padding-right:20px"><h2>METADATA</h2><h2>First 5 Rows</h2><table border="1" class="dataframe">
+<!DOCTYPE html><html><head><link rel="stylesheet" href="css/datacat.css"><link rel="stylesheet" href="css/tables.css"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="background-color:white;font-family:sans-serif;padding-left:20px;padding-right:20px"><h2>METADATA</h2><h3>First 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -63,7 +63,7 @@
       <td>CovidTracking API</td>
     </tr>
   </tbody>
-</table><h2>Random 10 Rows</h2><table border="1" class="dataframe">
+</table><h3>Random 10 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -78,54 +78,44 @@
   </thead>
   <tbody>
     <tr>
-      <th>51</th>
-      <td>JHU_COVID_19</td>
-      <td>Indicative latitude of geography (centroid)</td>
-      <td>LAT</td>
-      <td>FLOAT</td>
-      <td>False</td>
-      <td>None</td>
-      <td>JHU CSSE COVID-19 data</td>
-    </tr>
-    <tr>
-      <th>235</th>
-      <td>SCS_BE_DETAILED_MORTALITY</td>
-      <td>Age group of cohort</td>
-      <td>AGEGROUP</td>
-      <td>VARCHAR(16)</td>
+      <th>252</th>
+      <td>SCS_BE_DETAILED_PROVINCE_CASE_COUNTS</td>
+      <td>Timestamp of last update</td>
+      <td>LAST_UPDATED_DATE</td>
+      <td>TIMESTAMP_NTZ(9)</td>
       <td>False</td>
       <td>None</td>
       <td>Sciensano</td>
     </tr>
     <tr>
-      <th>117</th>
-      <td>PCM_DPS_COVID19_DETAILS</td>
-      <td>Patients in intensive care since last date of record</td>
-      <td>INTENSIVE_CARE_SINCE_PREV_DAY</td>
+      <th>36</th>
+      <td>HS_BULK_DATA</td>
+      <td>Healthcare provider classification</td>
+      <td>HEALTHCARE_PROVIDER_TYPE</td>
       <td>NUMBER(38,0)</td>
       <td>True</td>
-      <td>None</td>
-      <td>Presidenza del Consiglio dei Ministri, Dipartimento della Protezione Civile</td>
+      <td>One of: primary_care, secondary_care, hospitals, emergency_and_urgent_care and health_centers. Hospitals include polyclinics. Primary care includes GPs, PCPs and non-hospital paediatricians. Health centers are defined as having an on-site non-medical speciality (e.g. pharmacy, physiotherapy) or multi-speciality care.</td>
+      <td>Healthsites.io bulk data</td>
     </tr>
     <tr>
-      <th>60</th>
-      <td>KFF_HCP_CAPACITY</td>
-      <td>Total hospital beds, 2018</td>
-      <td>TOTAL_HOSPITAL_BEDS</td>
-      <td>NUMBER(38,0)</td>
+      <th>273</th>
+      <td>RKI_GER_DETAILED_DASHBOARD</td>
+      <td>Last update of data set</td>
+      <td>LAST_UPDATE_DATE</td>
+      <td>TIMESTAMP_NTZ(9)</td>
       <td>True</td>
       <td>None</td>
-      <td>2018 AHA Annual Survey, special data request by the Henry J. Kaiser Family Foundation</td>
+      <td>None</td>
     </tr>
     <tr>
-      <th>25</th>
-      <td>CT_US_COVID_TESTS</td>
-      <td>Patients currently in ICU</td>
-      <td>INICUCURRENTLY</td>
-      <td>NUMBER(38,0)</td>
+      <th>157</th>
+      <td>KFF_US_ICU_BEDS</td>
+      <td>ISO-3166-1 entity name</td>
+      <td>COUNTRY_REGION</td>
+      <td>VARCHAR(16777216)</td>
       <td>True</td>
       <td>None</td>
-      <td>None</td>
+      <td>Henry J. Kaiser Family Foundation</td>
     </tr>
     <tr>
       <th>155</th>
@@ -138,47 +128,57 @@
       <td>US Census</td>
     </tr>
     <tr>
-      <th>53</th>
-      <td>JHU_COVID_19</td>
-      <td>ISO-3166-2 code for geography of report</td>
-      <td>ISO3166_2</td>
-      <td>VARCHAR(16777216)</td>
-      <td>True</td>
+      <th>105</th>
+      <td>PCM_DPS_COVID19_DETAILS</td>
+      <td>Date of data point</td>
+      <td>DATE</td>
+      <td>DATE</td>
+      <td>False</td>
       <td>None</td>
       <td>JHU CSSE COVID-19 data</td>
     </tr>
     <tr>
-      <th>238</th>
-      <td>SCS_BE_DETAILED_MORTALITY</td>
-      <td>ISO-3166-1 code for geography of record</td>
-      <td>ISO3166_1</td>
-      <td>VARCHAR(2)</td>
+      <th>212</th>
+      <td>HDX_ACAPS</td>
+      <td>Type of the source of information on the public health measure</td>
+      <td>SOURCE_TYPE</td>
+      <td>VARCHAR(16777216)</td>
       <td>True</td>
       <td>None</td>
-      <td>Sciensano</td>
+      <td>ACAPS via HDX</td>
     </tr>
     <tr>
-      <th>103</th>
-      <td>PCM_DPS_COVID19_DETAILS</td>
-      <td>ISO-3166-1 entity name</td>
-      <td>COUNTRY_REGION</td>
-      <td>VARCHAR(16777216)</td>
-      <td>False</td>
+      <th>22</th>
+      <td>CT_US_COVID_TESTS</td>
+      <td>Patients hospitalised since previous date of report</td>
+      <td>HOSPITALIZEDCURRENTLYINCREASE</td>
+      <td>NUMBER(38,0)</td>
+      <td>True</td>
       <td>None</td>
-      <td>Presidenza del Consiglio dei Ministri, Dipartimento della Protezione Civile</td>
+      <td>CovidTracking API</td>
     </tr>
     <tr>
-      <th>160</th>
-      <td>KFF_US_ICU_BEDS</td>
-      <td>Note/comment</td>
-      <td>NOTE</td>
+      <th>279</th>
+      <td>IHME_COVID_19</td>
+      <td>COVID-19 beds needed on date, upper uncertainty bound</td>
+      <td>ALLBED_UPPER</td>
+      <td>FLOAT</td>
+      <td>True</td>
+      <td>None</td>
+      <td>IMHE</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>KFF_US_POLICY_ACTIONS</td>
+      <td>Whether the state has applied for a waiver under Section 1135 of the Social Security Act, allowing it to modify or suspend certain Medicare, Medicaid or CHIP requirements. Requests that have been submitted are logged as Submitted and approved requests are logged as Approved. NULL indicates no action.</td>
+      <td>SECTION_1135_WAIVER</td>
       <td>VARCHAR(16777216)</td>
       <td>True</td>
       <td>None</td>
       <td>Henry J. Kaiser Family Foundation</td>
     </tr>
   </tbody>
-</table><h2>Last 5 Rows</h2><table border="1" class="dataframe">
+</table><h3>Last 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
   <thead>
     <tr style="text-align: right;">
       <th></th>

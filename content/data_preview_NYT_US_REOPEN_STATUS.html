@@ -1,0 +1,545 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="css/datacat.css"><link rel="stylesheet" href="css/tables.css"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="background-color:white;font-family:sans-serif;padding-left:20px;padding-right:20px"><h2>NYT_US_REOPEN_STATUS</h2><h3>First 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>STATE_CODE</th>
+      <th>STATE</th>
+      <th>STATUS_DESCRIPTION</th>
+      <th>DATE_DETAILS_DESCRIPTION</th>
+      <th>RESTRICTION_START</th>
+      <th>RESTRICTION_END</th>
+      <th>STATUS_DETAILS</th>
+      <th>EXTERNAL_LINK</th>
+      <th>OPENED_PERSONAL_CARE</th>
+      <th>CLOSED_OUTDOOR_AND_RECREATION</th>
+      <th>CLOSED_ENTERTAINMENT</th>
+      <th>OPENED_OUTDOOR_AND_RECREATION</th>
+      <th>CLOSED_FOOD_AND_DRINK</th>
+      <th>OPENED_HOUSES_OF_WORSHIP</th>
+      <th>OPENED_ENTERTAINMENT</th>
+      <th>OPENED_FOOD_AND_DRINK</th>
+      <th>OPENED_RETAIL</th>
+      <th>OPENED_INDUSTRIES</th>
+      <th>POPULATION</th>
+      <th>LAST_UPDATE_DATE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AK</td>
+      <td>Alaska</td>
+      <td>reopened</td>
+      <td>Reopened April 24.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Mike Dunleavy, a Republican, eased restrictions on several kinds of businesses starting April 24. Alaska became one of the first states to make a nearly complete reopening, with all businesses allowed to open at full capacity on May 22.</td>
+      <td>https://www.cnn.com/2020/05/21/us/alaska-reopening-friday/index.html</td>
+      <td>Hair salons, barbershops, nail salons, etc.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gyms; Pools</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Libraries; Theaters; Bowling alleys; Museums</td>
+      <td>Restaurant dining; Bars</td>
+      <td>Retail stores</td>
+      <td>None</td>
+      <td>731545</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AL</td>
+      <td>Alabama</td>
+      <td>pausing</td>
+      <td>Reopened April 30.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Kay Ivey, a Republican, ordered residents to stay home for much of April and began reopening businesses starting in May. Ms. Ivey recently extended the state’s “Safer at Home” status and implemented a mask requirement until the end of August.</td>
+      <td>https://www.wsfa.com/2020/07/29/gov-ivey-update-public-states-repsonse-covid-/</td>
+      <td>Salons</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Beaches; Gyms</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Entertainment venues</td>
+      <td>Restaurant dining, bars and breweries</td>
+      <td>Retail stores</td>
+      <td>None</td>
+      <td>4903185</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AR</td>
+      <td>Arkansas</td>
+      <td>pausing</td>
+      <td>Reopened May 6.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Asa Hutchinson, a Republican, never implemented a statewide stay-at-home order, instead opting to close high-contact businesses like gyms and personal care services. The state began reopening many of these in early May. Arkansas has seen one of the steepest increases in coronavirus cases since reopening. In response, Mr. Hutchinson implemented a mask mandate effective July 20.</td>
+      <td>https://www.kspr.com/content/news/Arkansas-governor-No-further-reopening-as-virus-cases-surge-571501921.html</td>
+      <td>Hair salons, barbershops, nail salons, etc.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Campgrounds; Gyms; Pools</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Theaters, stadiums, museums, bowling alleys; Casinos; Large venues</td>
+      <td>Restaurant dining; Bars</td>
+      <td>Retail</td>
+      <td>None</td>
+      <td>3017804</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AZ</td>
+      <td>Arizona</td>
+      <td>reversing</td>
+      <td>Reopened May 8.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>After Gov. Doug Ducey’s stay-at-home order expired May 15, Arizona saw cases soar. In late June, Mr. Ducey, a Republican, announced that the state would “pause” operations of bars, gyms, movie theaters, waterparks and tubing rentals to contain the virus’s spread.</td>
+      <td>https://www.azcentral.com/story/news/local/arizona-health/2020/07/23/watch-live-ducey-provide-arizona-covid-19-update/5490927002/</td>
+      <td>Barbershops, salons, etc.</td>
+      <td>Gyms; Waterparks</td>
+      <td>Movie theaters</td>
+      <td>Pools, spas</td>
+      <td>Bars</td>
+      <td>True</td>
+      <td>Casinos</td>
+      <td>Restaurant dining</td>
+      <td>Retail stores</td>
+      <td>None</td>
+      <td>7278717</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>CA</td>
+      <td>California</td>
+      <td>reversing</td>
+      <td>Reopened May 25.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Gavin Newsom, a Democrat, emphasized caution as he allowed counties to reopen sectors in May and June. As cases rose in June and July, however, Mr. Newsom backtracked, ordering statewide closures of bars and indoor activities in many sectors including dining and entertainment. The state is also keeping a “watch list” of counties with upward virus trends.</td>
+      <td>https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/reopening-across-counties/</td>
+      <td>Pet groomers; Hair salons and barbershops in some counties; Nail salons, cosmetology services, tattoo parlors, piercing shops in some counties; Hair salons and barbershops for outdoor service in most counties</td>
+      <td>None</td>
+      <td>Movie theaters; Museums, galleries, and aquariums; Arcades and bowling alleys</td>
+      <td>Gyms in some counties</td>
+      <td>Bars</td>
+      <td>Houses of worship in some counties</td>
+      <td>Casinos in some areas; Zoos in some counties</td>
+      <td>Outdoor dining</td>
+      <td>Retail</td>
+      <td>Manufacturing; Warehouses; Offices in some counties; Movie, TV and music production</td>
+      <td>39512223</td>
+      <td>2020-08-07</td>
+    </tr>
+  </tbody>
+</table><h3>Random 10 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>STATE_CODE</th>
+      <th>STATE</th>
+      <th>STATUS_DESCRIPTION</th>
+      <th>DATE_DETAILS_DESCRIPTION</th>
+      <th>RESTRICTION_START</th>
+      <th>RESTRICTION_END</th>
+      <th>STATUS_DETAILS</th>
+      <th>EXTERNAL_LINK</th>
+      <th>OPENED_PERSONAL_CARE</th>
+      <th>CLOSED_OUTDOOR_AND_RECREATION</th>
+      <th>CLOSED_ENTERTAINMENT</th>
+      <th>OPENED_OUTDOOR_AND_RECREATION</th>
+      <th>CLOSED_FOOD_AND_DRINK</th>
+      <th>OPENED_HOUSES_OF_WORSHIP</th>
+      <th>OPENED_ENTERTAINMENT</th>
+      <th>OPENED_FOOD_AND_DRINK</th>
+      <th>OPENED_RETAIL</th>
+      <th>OPENED_INDUSTRIES</th>
+      <th>POPULATION</th>
+      <th>LAST_UPDATE_DATE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>22</th>
+      <td>MI</td>
+      <td>Michigan</td>
+      <td>reversing</td>
+      <td>Reopened June 1.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Gretchen Whitmer, a Democrat, took a regional approach to reopening before lifting Michigan’s stay-at-home order on June 1. Ms. Whitmer has since paused further reopenings, and on July 1, she ordered bars in most of the state to close again for indoor service. She later mandated the use of masks in most public settings. In late July, citing a resurgence in cases connected to social gatherings, Ms. Whitmer limited indoor gatherings to 10 people and ordered bars to close for indoor service statewide.</td>
+      <td>https://www.freep.com/story/news/local/michigan/2020/07/29/detroit-casinos-reopening-michigan-restrictions/5537945002/</td>
+      <td>Pet groomers; Hair salons, barbershops, nail salons, tattoo parlors</td>
+      <td>Gyms</td>
+      <td>None</td>
+      <td>Golf courses, marinas; Pools; Gyms in some regions</td>
+      <td>Bars for indoor service</td>
+      <td>True</td>
+      <td>Arcades, bowling alleys, theaters, night clubs and convention centers in some regions; Casinos</td>
+      <td>Bars for indoor service in certain counties; Restaurant dining; Bars for outdoor service</td>
+      <td>Retail stores</td>
+      <td>Construction, real estate; Manufacturing, including auto companies; Offices</td>
+      <td>9986857</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>GA</td>
+      <td>Georgia</td>
+      <td>reopened</td>
+      <td>Reopened April 24.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Brian Kemp, a Republican, went toe-to-toe with the White House and local mayors over his decision to reopen large parts of Georgia’s economy ahead of other states. Mr. Kemp has continued steadily with reopening plans while case counts have trended upward, and he has pushed back on local governments that have tried to enforce stricter shutdowns or mask requirements, going as far as suing Atlanta’s mayor and city council over a mask order.</td>
+      <td>https://www.ledger-enquirer.com/news/coronavirus/article244285992.html</td>
+      <td>Hair salons, barbershops, etc.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gyms</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Bowling alleys; Theaters, private social clubs; Large venues; Bars, nightclubs</td>
+      <td>Restaurant dining</td>
+      <td>Retail</td>
+      <td>None</td>
+      <td>10617423</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>NM</td>
+      <td>New Mexico</td>
+      <td>reversing</td>
+      <td>Reopened May 16.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Michelle Lujan Grisham, a Democrat, allowed some sectors to reopen May 16. As cases rose, Ms. Grisham announced she would delay the next phase of reopening indefinitely, and later ordered restaurants to restrict indoor dining.</td>
+      <td>https://www.krqe.com/health/coronavirus-new-mexico/new-mexico-indoor-dining-reopening-plans-criteria-remain-unclear/</td>
+      <td>Pet grooming and boarding, veterinary services; Hair salons, barbershops, tattoo parlors, massage parlors, nail salons</td>
+      <td>None</td>
+      <td>Casinos; Theaters</td>
+      <td>State parks; Golf courses, boating; Gyms, pools</td>
+      <td>Bars; Restaurant dining; Indoor service at breweries</td>
+      <td>True</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Retail stores; Malls</td>
+      <td>Offices</td>
+      <td>2096829</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>OR</td>
+      <td>Oregon</td>
+      <td>pausing</td>
+      <td>Reopened May 15.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Kate Brown, a Democrat, started a three-phase regional reopening on May 15, but said Phase 3 would not come until September at the earliest. Masks are required in both outdoor and indoor spaces, and indoor gatherings of more than 10 people are prohibited. Capacity for restaurants and bars was lowered, and Ms. Brown recently rolled back reopenings in two counties because of growing positive test rates.</td>
+      <td>https://www.oregonlive.com/news/2020/07/oregon-gov-kate-brown-announces-new-mask-mandate-for-kids-earlier-bar-and-restaurant-closure-times.html</td>
+      <td>Salons, barbershops</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Some state parks; Pools in most counties; Gyms</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Movie theaters, bowling alleys in most counties</td>
+      <td>Restaurants and bars</td>
+      <td>Retail stores</td>
+      <td>Offices in most counties</td>
+      <td>4217737</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>ME</td>
+      <td>Maine</td>
+      <td>reopening</td>
+      <td>Reopened May 1.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Janet Mills, a Democrat, allowed some businesses to begin reopening statewide in May and allowed additional, accelerated reopenings in counties with few coronavirus cases. More businesses were allowed to reopen statewide in June, but further reopenings, including of bars, have been delayed.</td>
+      <td>https://bangordailynews.com/2020/06/22/business/janet-mills-postpones-reopening-indoor-bar-service-citing-infections-in-other-states/</td>
+      <td>Hair salons, barbershops, pet groomers; Nail salons and tattoo parlors; Spas and massage parlors</td>
+      <td>None</td>
+      <td>None</td>
+      <td>State parks, boating, golf courses; Remote campgrounds, hunting and fishing; Private campgrounds, RV parks; Gyms</td>
+      <td>Bars for indoor service</td>
+      <td>True</td>
+      <td>Amusement parks, water parks; Bowling alleys and arcades; Movie theaters; Performing arts venues; Casinos</td>
+      <td>Restaurants; Bars open for outdoor service</td>
+      <td>Retail stores</td>
+      <td>None</td>
+      <td>1344212</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>MN</td>
+      <td>Minnesota</td>
+      <td>reopened</td>
+      <td>Reopened May 18.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Tim Walz, a Democrat, first allowed employees in certain agriculture, industrial and office settings to return to work in late April. More businesses were allowed to open after his stay-at-home order expired in May. Mr. Walz later ordered the use of face masks in most public settings beginning July 25.</td>
+      <td>https://www.startribune.com/walz-mandates-masks-indoors-across-state/571861471/</td>
+      <td>Salons, barbershops, tattoo parlors</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Campgrounds; Gyms</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Theaters and concert halls; Bowling alleys, arcades and museums</td>
+      <td>Restaurants and bars</td>
+      <td>Retail stores; Malls</td>
+      <td>Manufacturing; Offices</td>
+      <td>5639632</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>VT</td>
+      <td>Vermont</td>
+      <td>reopened</td>
+      <td>Reopened May 15.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Phil Scott, a Republican, allowed small changes, such as the opening of farmers’ markets, before a broader reopening beginning with retail stores on May 18. Other businesses, such as gyms and restaurants, reopened in June. Face masks are required in both indoor and outdoor public spaces.</td>
+      <td>https://vtdigger.org/2020/07/24/scott-orders-mask-mandate/</td>
+      <td>Hair salons and barbershops; Nail salons, spas, tattoo parlors</td>
+      <td>None</td>
+      <td>None</td>
+      <td>State parks, golf courses, trails, etc.; Campgrounds; Gyms, fitness centers</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Museums, theaters, libraries</td>
+      <td>Restaurant dining; Bars</td>
+      <td>Retail stores</td>
+      <td>Manufacturing, construction, distribution</td>
+      <td>623989</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>LA</td>
+      <td>Louisiana</td>
+      <td>reversing</td>
+      <td>Reopened May 15.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. John Bel Edwards, a Democrat, allowed the state’s stay-at-home order to lift and an array of businesses to reopen starting May 15. In June, citing an increase in cases, Mr. Edwards said the state would remain in Phase 2 for several more weeks. As cases continued to climb, Mr. Edwards ordered bars to close again and required the use of masks in public, later saying that these restrictions would remain in place through late August.</td>
+      <td>https://www.wdsu.com/article/watch-live-gov-edwards-providing-biweekly-covid-19-update/33513056</td>
+      <td>Salons and barbershops; Spas, tattoo parlors</td>
+      <td>Amusement parks, water parks and theme parks; Concert and music halls</td>
+      <td>None</td>
+      <td>Gyms; State parks; Pools; Bowling alleys, skating rinks</td>
+      <td>Bars</td>
+      <td>True</td>
+      <td>Movie theaters; Certain museums, zoos and aquariums; Casinos; Event centers</td>
+      <td>Restaurant dining</td>
+      <td>Malls</td>
+      <td>None</td>
+      <td>4648794</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>HI</td>
+      <td>Hawaii</td>
+      <td>reopening</td>
+      <td>Reopened May 7.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. David Ige, a Democrat, started the state’s reopening process in early May, when there were only a few new cases reported each day. Each island can now set its own timeline for reopening, with the governor’s approval. Despite the slow approach, Hawaii has seen a resurgence of the virus in recent days.</td>
+      <td>https://www.bigislandvideonews.com/2020/06/04/hawaii-economic-reopening-strategy-posted-online/</td>
+      <td>Pet groomers; Nail salons in some areas; Tattoo parlors in some areas; Salons and barbershops</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Beaches, piers, docks, etc.; State parks; Pools and waterparks in some areas; Campgrounds in some areas; Gyms</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Arcades, bowling alleys, theaters in some areas</td>
+      <td>Restaurant dining; Bars</td>
+      <td>Retail stores</td>
+      <td>Construction in some areas; Offices in some areas</td>
+      <td>1415872</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>NY</td>
+      <td>New York</td>
+      <td>reopening</td>
+      <td>Reopened May 29.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Andrew M. Cuomo, a Democrat, announced limited and phased reopenings by region starting May 15. New York City, the hardest-hit region in the state, became the last to enter Phase 4 of reopening on July 20. But unlike in other regions, indoor dining at restaurants remains prohibited and other indoor venues, like shopping malls, will stay closed in New York City.</td>
+      <td>https://www.nytimes.com/2020/07/20/nyregion/nyc-phase-4-reopening-bars.html</td>
+      <td>Hair salons, barbershops; Tattoo parlors, massage parlors, nail salons</td>
+      <td>Gyms</td>
+      <td>Movie theaters, casinos; Amusement parks, bowling alleys</td>
+      <td>Beaches; Fishing and hunting; Public pools and playgrounds; Outdoor zoos, botanical gardens and nature parks</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Museums and aquariums in some regions</td>
+      <td>Outdoor dining at restaurants in some regions; Indoor dining in some regions</td>
+      <td>Retail stores; Malls in some regions</td>
+      <td>Construction, manufacturing; Offices; Film and TV production</td>
+      <td>19453561</td>
+      <td>2020-08-07</td>
+    </tr>
+  </tbody>
+</table><h3>Last 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>STATE_CODE</th>
+      <th>STATE</th>
+      <th>STATUS_DESCRIPTION</th>
+      <th>DATE_DETAILS_DESCRIPTION</th>
+      <th>RESTRICTION_START</th>
+      <th>RESTRICTION_END</th>
+      <th>STATUS_DETAILS</th>
+      <th>EXTERNAL_LINK</th>
+      <th>OPENED_PERSONAL_CARE</th>
+      <th>CLOSED_OUTDOOR_AND_RECREATION</th>
+      <th>CLOSED_ENTERTAINMENT</th>
+      <th>OPENED_OUTDOOR_AND_RECREATION</th>
+      <th>CLOSED_FOOD_AND_DRINK</th>
+      <th>OPENED_HOUSES_OF_WORSHIP</th>
+      <th>OPENED_ENTERTAINMENT</th>
+      <th>OPENED_FOOD_AND_DRINK</th>
+      <th>OPENED_RETAIL</th>
+      <th>OPENED_INDUSTRIES</th>
+      <th>POPULATION</th>
+      <th>LAST_UPDATE_DATE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>47</th>
+      <td>VT</td>
+      <td>Vermont</td>
+      <td>reopened</td>
+      <td>Reopened May 15.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Phil Scott, a Republican, allowed small changes, such as the opening of farmers’ markets, before a broader reopening beginning with retail stores on May 18. Other businesses, such as gyms and restaurants, reopened in June. Face masks are required in both indoor and outdoor public spaces.</td>
+      <td>https://vtdigger.org/2020/07/24/scott-orders-mask-mandate/</td>
+      <td>Hair salons and barbershops; Nail salons, spas, tattoo parlors</td>
+      <td>None</td>
+      <td>None</td>
+      <td>State parks, golf courses, trails, etc.; Campgrounds; Gyms, fitness centers</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Museums, theaters, libraries</td>
+      <td>Restaurant dining; Bars</td>
+      <td>Retail stores</td>
+      <td>Manufacturing, construction, distribution</td>
+      <td>623989</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>WA</td>
+      <td>Washington</td>
+      <td>pausing</td>
+      <td>Reopened May 26.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>While every county has now moved into some phase of reopening, Gov. Jay Inslee, a Democrat, said he would pause further reopenings indefinitely. Mr. Inslee also expanded an order to use face coverings in all public spaces starting July 25. Restaurants, gyms and movie theaters must reduce capacity in some counties.</td>
+      <td>https://www.seattlepi.com/coronavirus/article/inslee-extends-phase-pause-indefinitely-wa-state-15441125.php</td>
+      <td>Gyms in most counties; Hair salons, barbershops, tattoo parlors, etc.; Pet grooming</td>
+      <td>None</td>
+      <td>None</td>
+      <td>State parks, fishing, hunting, golf courses</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Casinos</td>
+      <td>Restaurant dining in most counties</td>
+      <td>Retail stores</td>
+      <td>Construction</td>
+      <td>7614893</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>WI</td>
+      <td>Wisconsin</td>
+      <td>reopened</td>
+      <td>Reopened May 13.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>The state Supreme Court struck down Gov. Tony Evers's stay-at-home order on May 13, effectively lifting statewide restrictions on businesses in Wisconsin. Mr. Evers, a Democrat in a highly contested battleground state, had already announced plans for a gradual reopening but warned the ruling would cause “chaos.” Some counties have since placed their own restrictions on businesses. Mr. Evers mandated the use of face coverings in all public indoor places starting August 1.</td>
+      <td>https://www.jsonline.com/story/news/2020/05/14/wisconsin-bars-hair-salons-dine-restaurants-open-after-supreme-court-ruling-stay-home-order-evers/5194195002/</td>
+      <td>Pet groomers for curbside dropoff; Hair salons, spas, barbershops</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Golf courses; State parks; Gyms</td>
+      <td>None</td>
+      <td>True</td>
+      <td>None</td>
+      <td>Restaurants and bars</td>
+      <td>Retail stores</td>
+      <td>None</td>
+      <td>5822434</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>WV</td>
+      <td>West Virginia</td>
+      <td>reopened</td>
+      <td>Reopened May 4.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>West Virginia’s stay-at-home order was in place for a little more than a month. Gov. Jim Justice, a Republican, lifted restrictions on certain businesses on May 4, with new reopenings each following week. Starting July 7, face coverings are required where social distance can’t be maintained. The governor limited social gatherings to 25 people, ordered the closure of fairs, festivals and concerts statewide and ordered bars in Monongalia County to close starting July 14.</td>
+      <td>https://www.wvnstv.com/top-stories/coming-soon-wv-covid-19-update-july-13-2020/</td>
+      <td>Salons, barbershops, pet groomers; Tanning salons; Massage parlors and spas</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gyms, recreation centers; State parks, campgrounds; Pools</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Museums, zoos; Bowling alleys, pool halls, roller rinks; Casinos; Movie theaters; Amusement parks, fairs, festivals</td>
+      <td>Restaurant dining; Bars</td>
+      <td>Retail stores; Malls</td>
+      <td>None</td>
+      <td>1792147</td>
+      <td>2020-08-07</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>WY</td>
+      <td>Wyoming</td>
+      <td>reopened</td>
+      <td>Reopened May 1.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gov. Mark Gordon, a Republican, did not order Wyoming residents to stay home, and he began lifting restrictions on businesses May 1. However, Mr. Gordon recently extended safety measures on restaurants, bars and gyms through August 15.</td>
+      <td>https://cowboystatedaily.com/2020/05/07/gordon-opens-wyoming-restaurants-and-bars-by-may-15/</td>
+      <td>Hair salons, barbershops, tattoo parlors, massage therapy, etc.</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Gyms; State parks</td>
+      <td>None</td>
+      <td>True</td>
+      <td>Movie theaters, entertaiment venues</td>
+      <td>Restaurant dining; Bars</td>
+      <td>Retail stores</td>
+      <td>None</td>
+      <td>578759</td>
+      <td>2020-08-07</td>
+    </tr>
+  </tbody>
+</table><br><br><hr></body></html>
